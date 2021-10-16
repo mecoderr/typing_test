@@ -7,6 +7,19 @@
     <link rel="stylesheet" href="style.css">
     <title>Typing Test</title>
 </head>
+<style>
+    @media(max-width: 1000px) {
+  #main{
+        display: none;
+  }
+  .info_main{
+        display: none;
+  }
+  .errr{
+        display: block;
+  }
+}
+</style>
 <body>
     <div id="main" class="main">
         <div class="inner">
@@ -23,6 +36,7 @@
             </ul>
         </div>
     </div>
+    
     <!-- this is info tasks code -->
     <div class="info_main">
         <div class="info_inner">
@@ -32,6 +46,11 @@
             <textarea id="text" cols="90" rows="6"></textarea>
             <button id="info_start" class="info_start">Start</button>
         </div>
+    </div>
+
+    <!-- for security  -->
+    <div class="errr">
+        <h2>Doesn't support !</h2>
     </div>
     </div>
     <script src="script.js"></script>
